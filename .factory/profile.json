@@ -68,7 +68,7 @@
     "health_checks": [],
     "notes": [
       "Nothing here is deployed. There is no staging branch, no container, no service and no published artifact — the repository is exercise source read by a human in an IDE.",
-      "There is no CI that builds this code: the only workflows are .github/workflows/factory-pipeline.yml and factory-branch-guard.yml, neither of which compiles Scala. A merge is therefore never validated by a build unless a role ran one by hand and said so.",
+      "There is no CI that builds this code: the only workflow present is .github/workflows/factory-pipeline.yml, which does not compile Scala. A merge is therefore never validated by a build unless a role ran one by hand and said so.",
       "Consequently there is no release train to halt and no post-merge verification to run. A release role should treat a merged PR here as complete."
     ]
   }
